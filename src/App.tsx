@@ -10,14 +10,13 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculatorOutline, ellipse, home, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
+import { calculatorOutline, ellipse, fingerPrintOutline, homeOutline, personOutline, speedometerOutline, square, triangle } from 'ionicons/icons';
+import Tab1 from './pages/Profile';
+import Tab2 from './pages/Click_counter';
+import Tab3 from './pages/Calculator';
 
-// Home resources
-import Home from './pages/Home';
-
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+//Home resources 
+import Home from './pages/home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -38,7 +37,6 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -46,13 +44,13 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          
-          {/* Application default route */}
-           <Route exact path="/">
-            <Redirect to="/Home" />
+
+          {/*Application default route*/}
+          <Route exact path="/">
+            <Redirect to="/Home"/>
           </Route>
 
-          {/* Home Router */}
+          {/* Home Router*/}  
           <Route exact path="/Home">
             <Home />
           </Route>
@@ -66,30 +64,26 @@ const App: React.FC = () => (
           <Route path="/tab3">
             <Tab3 />
           </Route>
-
         </IonRouterOutlet>
-
         <IonTabBar slot="bottom">
-          {/* Home Tab Button */}
-          <IonTabButton tab="Home" href="/Home">
-            <IonIcon aria-hidden="true" icon={home} />
+          {/* Home Tab Button*/}
+          <IonTabButton tab="home" href="/home">
+            <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon aria-hidden="true" icon={speedometerOutline} />
-            <IonLabel>Click Counter</IonLabel>
+            <IonIcon aria-hidden="true" icon={fingerPrintOutline} />
+            <IonLabel>Click counter</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab3" href="/tab3">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
             <IonLabel>Calculator</IonLabel>
           </IonTabButton>
         </IonTabBar>
-
       </IonTabs>
     </IonReactRouter>
   </IonApp>
