@@ -15,7 +15,7 @@ import {
   IonText,
 } from '@ionic/react';
 import { camera, videocam, albums, notifications, chatbox, person } from 'ionicons/icons';
-import './Home.css';
+
 
 const Home: React.FC = () => {
   return (
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
           </IonToolbar>
 
           <IonToolbar color="light">
-            <img src="../src/assets/img/PROFILE_PIC.png" alt="profile" />
+            <img src="assets/img/Ayco.jpg" alt="profile" />
             <IonText style={{ textAlign: 'center' }}>
             Hi its me Ayco
             </IonText>
