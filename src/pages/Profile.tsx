@@ -44,8 +44,8 @@ const Profile: React.FC = () => {
         </IonHeader>
         
         <IonCard>
-          <img alt="Silhouette of mountains" id="cover_pic" onClick={toggleModal_coverpic} src="../src/assets/img/COVER_PIC.png" />
-          <img alt="Silhouette of mountains" id="profile_pic" onClick={toggleModal_profpic} src="../src/assets/img/PROFILE_PIC.png" />  
+          <img alt="Silhouette of mountains" id="cover_pic" onClick={toggleModal_coverpic} src="assets/img/Talk.jpg" />
+          <img alt="Silhouette of mountains" id="profile_pic" onClick={toggleModal_profpic} src="assets/img/Ayco.jpg" />  
 
           <IonCardHeader>
             <IonCardTitle>Emmanuel O. Ayco Jr.</IonCardTitle>
