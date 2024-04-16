@@ -14,6 +14,8 @@ import { calculatorOutline, ellipse, fingerPrintOutline, homeOutline, personOutl
 import Tab1 from './pages/Profile';
 import Tab2 from './pages/Click_counter';
 import Tab3 from './pages/Calculator';
+import Tab4 from './pages/Tab4';
+
 
 //Home resources 
 import Home from './pages/home';
@@ -71,17 +73,13 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="tab4" href="/tab4">
             <IonIcon aria-hidden="true" icon={personOutline} />
-            <IonLabel>Profile</IonLabel>
+            <IonLabel>Blank</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={fingerPrintOutline} />
-            <IonLabel>Click counter</IonLabel>
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon aria-hidden="true" icon={calculatorOutline} />
-            <IonLabel>Calculator</IonLabel>
+            <IonLabel>Info</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
