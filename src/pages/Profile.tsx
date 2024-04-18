@@ -13,7 +13,7 @@ const Profile: React.FC = () => {
 
   const handleProceed = () => {
     setShowAlert(false);
-    window.open('https://www.facebook.com/profile.php?id=100090915698723', '_blank');
+    window.open('https://www.facebook.com/ayco.emmanuel', '_blank');
   };
 
   const handleOpenActionSheet = () => {
@@ -48,11 +48,11 @@ const Profile: React.FC = () => {
           <img alt="Silhouette of mountains" id="profile_pic" onClick={toggleModal_profpic} src="../src/assets/img/PROFILE_PIC.png" />  
 
           <IonCardHeader>
-            <IonCardTitle>Angela N. Libay</IonCardTitle>
+            <IonCardTitle>Emmanuel O. Ayco Jr.</IonCardTitle>
             <IonCardSubtitle>BSIT Student, 3rd Year - NBSC</IonCardSubtitle>
           </IonCardHeader>
 
-          <IonCardContent><i>❤️ Blessed</i> 😊 🙏 &#x1F446;</IonCardContent>
+          <IonCardContent><i>Im a Misfit</i>  &#x1F446;</IonCardContent>
 
           <IonButton onClick={() => setShowAlert(true)} expand="block" color="primary">Quick Facts</IonButton>
 
