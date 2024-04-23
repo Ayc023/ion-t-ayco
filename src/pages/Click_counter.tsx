@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonGrid, IonRow, IonCol } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonAvatar, IonItem, IonLabel, IonIcon } from '@ionic/react';
+import { arrowBackCircle, } from 'ionicons/icons';
+import { IonRouterLink } from '@ionic/react'; // Added IonRouterLink import
+import './Click_counter.css';
 
-const Click_counter: React.FC = () => {
-  const [counter, setCounter] = useState<number>(0);
+
+const Tab2: React.FC = () => {
+  const [count, setCount] = useState(0);
+
 
   const incrementCounter = () => {
-    setCounter(counter + 1);
+    setCount(count + 1);
   };
 
-  const resetCounter = () => {
-    setCounter(0);
-  };
 
   return (
     <IonPage>
@@ -19,32 +21,23 @@ const Click_counter: React.FC = () => {
           <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen className="ion-padding" style={{ backgroundColor: 'lightblue' }}>
-        <IonGrid>
-          <IonRow>
-            <IonCol size="12" className="ion-text-center">
-              <p>Click the button to increase the count:</p>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol size="12" className="ion-text-center">
-              <IonButton onClick={incrementCounter}>Click Me</IonButton>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol size="12" className="ion-text-center">
-              <p>Counter: {counter}</p>
-            </IonCol>
-          </IonRow>
-          <IonRow>
-            <IonCol size="12" className="ion-text-center">
-              <IonButton onClick={resetCounter}>Reset</IonButton>
-            </IonCol>
-          </IonRow>
-        </IonGrid>
+      <IonContent fullscreen className="counter-content">
+      
+      <IonRouterLink href="/Home">
+            <IonIcon id="arrow" aria-hidden="true" icon={arrowBackCircle} />
+                </IonRouterLink>
+
+        <div id="counter">
+          <h1>Click Counter</h1>
+          <p>Total Clicks: {count}</p>
+          <IonButton onClick={incrementCounter}>Click me!</IonButton>
+        </div>
+
+
       </IonContent>
     </IonPage>
   );
 };
 
-export default Click_counter;
+
+export default Tab2;
