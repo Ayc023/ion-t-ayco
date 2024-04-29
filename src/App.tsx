@@ -8,7 +8,6 @@ import {
   IonTabButton,
   IonTabs,
   setupIonicReact
-  
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { home, calculatorOutline, ellipse, fingerPrintOutline, personCircleOutline, square, triangle, closeOutline } from 'ionicons/icons';
@@ -16,7 +15,8 @@ import Home from './pages/home';
 import Profile from './pages/Profile';
 import Click_counter from './pages/Click_counter';
 import Calculator from './pages/Calculator';
-import Tab4 from './pages/Tab4';
+import To_do_list from './pages/Todolist';
+import Qoutes_Generator from './pages/qoutesgenerator';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -63,10 +63,18 @@ const App: React.FC = () => (
             <Calculator />
           </Route>
 
-
           <Route exact path="/click_counter">
             <Click_counter />
           </Route>
+
+          <Route exact path="/to_do_list">
+            < To_do_list />
+          </Route>
+
+          <Route exact path="/qoutes_generator">
+            < Qoutes_Generator />
+          </Route>
+
           <Route exact path="/profile">
             <Profile />
           </Route>
@@ -92,12 +100,11 @@ const App: React.FC = () => (
             <IonLabel>Calculator</IonLabel>
           </IonTabButton>
         */}
-          
+
           <IonTabButton tab="tab4" href="/tab4">
             <IonIcon aria-hidden="true" icon={closeOutline} />
             <IonLabel>Blank</IonLabel>
           </IonTabButton>
-        
 
           
           <IonTabButton tab="profile" href="/profile">
