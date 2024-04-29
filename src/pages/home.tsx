@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           <IonToolbar color="light">
             <img src="../src/assets/img/PROFILE_PIC.png" alt="profile" />
             <IonText style={{ textAlign: 'center' }}>
-            Hi its me Ayco
+            Hi its me Emmanuel 
             </IonText>
 
           </IonToolbar>
