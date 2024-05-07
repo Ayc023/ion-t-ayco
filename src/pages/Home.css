@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+  }
+  p{
+    margin: 10px 50px 200px 50px;
+  }
+  #text{
+    text-align: center;
+  }
+  #summary{
+    margin-top: 60px;
+    font-size: 50px;
+  }
+  ion-card{
+    width: 70%;
+    margin: 0% 15% 0% 15%;
+  }
+  ion-item {
+    width: 70%;
+    margin: 1% 15% 0% 15%;
+    border-radius: 8px; /* Adjust border-radius as needed */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust box-shadow as needed */
+    border: 1px solid #e0e0e0; /* Adjust border color as needed */
+  }
+  
+  ion-card-title{
+    font-size: 30px;
+  }
+  ion-card-subtitle{
+    font-size: 20px;
+  }
+  ion-card-header{
+    width: 70%;
+    text-align: center;
+    margin: 0% 15% 0% 15%;
+  }
+  ion-col{
+    border-radius: 8px; /* Adjust border-radius as needed */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust box-shadow as needed */
+    border: 1px solid #e0e0e0; /* Adjust border color as needed */
+  }

@@ -1,0 +1,7 @@
+{
+  "name": "ion-t-ayco",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
