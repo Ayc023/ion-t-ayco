@@ -40,7 +40,7 @@ const ToDoList: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>ToDo List</IonTitle>
+          <IonTitle>Todo List</IonTitle>
         </IonToolbar>
       </IonHeader>
       
@@ -72,4 +72,4 @@ const ToDoList: React.FC = () => {
   );
 };
 
-export default ToDoList;
+export default ToDoList
