@@ -106,7 +106,7 @@ const App: React.FC = () => (
           </IonTabButton>
 
 
-          <IonTabButton tab="profile" href="/profile">
+          <IonTabButton tab="profile" href="/ion-t-ayco/profile">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
