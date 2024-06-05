@@ -200,7 +200,7 @@ const deleteQuote = async (index: number) => {
 };
 
 const goBack = () => {
-  window.location.href = '/';
+  window.location.href = 'ion-t-ayco/Home';
 };
 
   return (
@@ -268,7 +268,7 @@ const goBack = () => {
             <IonAlert
               isOpen={showAlert}
               onDidDismiss={handleAlertDismiss} // Call the handleAlertDismiss function when the alert is closed
-              header="ArsyArts"
+              header="Ayco"
               subHeader=""
               message={renderRandomMessage()}
               buttons={['Close']}
